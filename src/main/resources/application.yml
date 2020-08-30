@@ -1,0 +1,16 @@
+server:
+  port: 9012
+
+nacos:
+  config:
+    server-addr: 127.0.0.1:8848
+    maxRetry: 3
+    configLongPollTimeout: 10000
+    configRetryTime: 3
+    autoRefresh: true
+    enableRemoteSyncConfig: true
+    remoteFirst: true
+    username: nacos
+    password: nacos
+  discovery:
+    server-addr: 127.0.0.1:8848
